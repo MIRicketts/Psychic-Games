@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Psychic Game</title>
+</head>
+
+<body>
+
+  <!-- create html skeleton and provide proper id of tags so you can use javascript to select and update specific areas -->
+  
+  <h1>Play Psychic Game</h1>
+  
+   <!-- <div>
+    you guessed: <span id="user-guess"></span>
+    computer guess: <span id="computer-guess"></span>
+    letters already guessed: <span id:"guessed letters"></span>
+    number of Losses: <span id: "Losses"
+    number of wins :<span id: "wins"
+  -->
+
+  <div> Player Guess: <span id="playerGuess"></span> </div>
+  <div>Computer Guess: <span id="computerGuess"></span></div>
+  <div>Letters Guessed: <span id="guessedLetters">  </span></div>
+  <div>Games Lossed: <span id="losses"></span></div>
+<div>Games Won: <span id="wins"></span></div>
+
+
+ 
+
+
+  </div>
+
+
+  
+  <script type="text/Javascript">
+
+
+var win = 0;
+var loses = 0;
+var guessesLeft=0;
+
+var computerChoicesBank = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+document.onkeyup = function (event){
+
+
+  var playerGuess = event.key
+
+
+
+  var computerGuess = computerChoicesBank[ math.floor(math.random()
+*computerChoicesBank.lenth)]
+
+}
+  
+  
+<!-- Create Variables Linked to the div above -->
+
+
+var playerGuess = document.getElementById(playerGuess)
+var computerGuess = document.getElementById(computerGuess)
+var guessedLetters = document.getElementById(guessedLetters)
+var losses = document.getElementById(losses)
+var wins = document.getElementById(wins)
+
+// create all of my variables
+// win (number)-
+// losses-
+// guesses left-
+// letters already guessed-array(.push)
+// computer choices-string
+// computer choices bank (array of the alphabet)
+
+var computerChoicesBank = "abcdefghijklmpnoqrstuvwxyz".split("")
+
+// create variables that reference specific parts of the page
+// $wins (document.getelementbyID(wins))
+// loses
+// guesses left
+// userguest
+// computerGuess
+// letters already guessed
+
+// create a function to restart the game
+function newGame(){
+  // reset important game variables
+  // assign computerGuess a new random letter
+  // reset the letter already guessed array
+  letterAlreadyGuessed=0;
+
+  // reset guess letter after 10
+  // write information to the page indicating a new game has begun
+}
+
+document.onkeyup = function(event){
+
+
+}
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
